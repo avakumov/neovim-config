@@ -1,0 +1,4 @@
+{
+  "hop.nvim": { "branch": "master", "commit": "03f0434869f1f38868618198b5f4f2ab6d39aef2" },
+  "lazy.nvim": { "branch": "main", "commit": "e6bf3a0d9c4899dcf832270f79bb1cee8fbc506e" }
+}
