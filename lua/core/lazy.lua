@@ -11,11 +11,25 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
+local plugins = 
+{
 	{"phaazon/hop.nvim",
 	config = function()
-    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
-  end
+    	require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+	end
+	},
+	{
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim", 
+	    "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+            "s1n7ax/nvim-window-picker"
+        }
+    }
 }
-})
+
+
+require("lazy").setup(plugins)
 
