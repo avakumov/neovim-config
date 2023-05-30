@@ -45,7 +45,14 @@ local plugins =
     {'hrsh7th/nvim-cmp'},
     {'hrsh7th/cmp-nvim-lsp-signature-help'}, 
     { 'hrsh7th/vim-vsnip' },
-    {'hrsh7th/vim-vsnip-integ'}
+    {'hrsh7th/vim-vsnip-integ'},
+
+
+   {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+    {'jose-elias-alvarez/null-ls.nvim'}
 }
 
 
