@@ -28,7 +28,8 @@ local plugins =
             "s1n7ax/nvim-window-picker"
         }
     },
-    {"nvim-treesitter/nvim-treesitter"}
+    {"nvim-treesitter/nvim-treesitter"},
+    {"neovim/nvim-lspconfig"}
 }
 
 
