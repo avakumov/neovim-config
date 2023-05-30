@@ -29,7 +29,8 @@ local plugins =
         }
     },
     {"nvim-treesitter/nvim-treesitter"},
-    {"neovim/nvim-lspconfig"}
+    {"neovim/nvim-lspconfig"},
+    { "ellisonleao/gruvbox.nvim", priority = 1000 }
 }
 
 
