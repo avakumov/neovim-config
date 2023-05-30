@@ -30,7 +30,22 @@ local plugins =
     },
     {"nvim-treesitter/nvim-treesitter"},
     {"neovim/nvim-lspconfig"},
-    { "ellisonleao/gruvbox.nvim", priority = 1000 }
+
+    { "ellisonleao/gruvbox.nvim", priority = 1000 },
+
+    {
+      "williamboman/mason.nvim",
+      build = ":MasonUpdate" -- :MasonUpdate updates registry contents
+    },
+
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/cmp-buffer'}, 
+    {'hrsh7th/cmp-path'},
+    {'hrsh7th/cmp-cmdline'}, 
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-nvim-lsp-signature-help'}, 
+    { 'hrsh7th/vim-vsnip' },
+    {'hrsh7th/vim-vsnip-integ'}
 }
 
 
