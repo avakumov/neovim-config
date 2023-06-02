@@ -47,7 +47,11 @@ local plugins = {
 		tag = "0.1.1",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+
 	{ "jose-elias-alvarez/null-ls.nvim" },
+
+	-- status line
+	{ "vim-airline/vim-airline" },
 }
 
 require("lazy").setup(plugins)
