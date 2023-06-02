@@ -61,6 +61,10 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+-- NeoTree
+keymap("n", "<leader>e", ":Neotree float reveal<CR>", opts)
+keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
@@ -84,7 +88,3 @@ end, { remap = true })
 vim.keymap.set("", "T", function()
 	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
 end, { remap = true })
-
--- NeoTree
-keymap("n", "<leader>e", ":Neotree float reveal<CR>", opts)
-keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)

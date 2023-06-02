@@ -55,6 +55,7 @@ local plugins = {
 
 	-- autopairs plugins
 	{ "windwp/nvim-autopairs" },
+	{ "terrortylor/nvim-comment" },
 }
 
 require("lazy").setup(plugins)
