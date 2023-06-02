@@ -52,6 +52,9 @@ local plugins = {
 
 	-- status line
 	{ "vim-airline/vim-airline" },
+
+	-- autopairs plugins
+	{ "windwp/nvim-autopairs" },
 }
 
 require("lazy").setup(plugins)
