@@ -1,6 +1,6 @@
 require("core.lazy")
-require("core.mappings")
 require("core.config")
+require("core.keymaps")
 
 require("plugins.theme")
 require("plugins.neotree")

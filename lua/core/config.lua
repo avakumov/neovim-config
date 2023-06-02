@@ -1,5 +1,5 @@
 vim.wo.number = true
-vim.wo.relativenumber = true
+-- vim.wo.relativenumber = true
 
 -- Indent Settings
 vim.opt.expandtab = true
