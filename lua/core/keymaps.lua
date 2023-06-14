@@ -65,6 +65,9 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>e", ":Neotree float reveal<CR>", opts)
 keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 
+--Insert date
+keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
@@ -77,14 +80,14 @@ keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 local hop = require("hop")
 local directions = require("hop.hint").HintDirection
 vim.keymap.set("", "f", function()
-	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
+	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = false })
 end, { remap = true })
 vim.keymap.set("", "F", function()
-	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
+	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = false })
 end, { remap = true })
-vim.keymap.set("", "t", function()
-	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
-end, { remap = true })
-vim.keymap.set("", "T", function()
-	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
-end, { remap = true })
+-- vim.keymap.set("", "t", function()
+-- 	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
+-- end, { remap = true })
+-- vim.keymap.set("", "T", function()
+-- 	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
+-- end, { remap = true })
