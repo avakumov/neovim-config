@@ -6,9 +6,9 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = ";"
+vim.g.maplocalleader = ";"
 
 -- Modes
 --   normal_mode = "n",
@@ -62,7 +62,7 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- NeoTree
-keymap("n", "<leader>e", ":Neotree float reveal<CR>", opts)
+keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
 keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 
 --Insert date
@@ -91,3 +91,11 @@ end, { remap = true })
 -- vim.keymap.set("", "T", function()
 -- 	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
 -- end, { remap = true })
+
+--[[ example function insert text on current cursot position --]]
+-- local test_print = function()
+-- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+-- 	vim.api.nvim_buf_set_text(0, row - 1, col, row - 1, col, { "hello" })
+-- end
+--
+-- vim.keymap.set("n", "<leader>t", test_print, { noremap = true, silent = true })
