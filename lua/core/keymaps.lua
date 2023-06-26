@@ -18,7 +18,6 @@ vim.g.maplocalleader = ";"
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -38,59 +37,25 @@ keymap("n", "0", ":bprevious<CR>", opts)
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>", opts)
-
--- Insert --
--- Press jk fast to exit insert mode
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
-
--- Visual --
--- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
-
--- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dp', opts)
-
--- Visual Block --
--- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Stay in indent mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 
 -- NeoTree
 keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
 keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 
+-- Hop plugin
+keymap("n", "f", ":HopChar1<CR>", opts)
+
 --Insert date
 keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
-
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
---
-
--- hop plugin config --
-local hop = require("hop")
-local directions = require("hop.hint").HintDirection
-vim.keymap.set("", "f", function()
-	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = false })
-end, { remap = true })
-vim.keymap.set("", "F", function()
-	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = false })
-end, { remap = true })
--- vim.keymap.set("", "t", function()
--- 	hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
--- end, { remap = true })
--- vim.keymap.set("", "T", function()
--- 	hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
--- end, { remap = true })
 
 --[[ example function insert text on current cursot position --]]
 -- local test_print = function()
