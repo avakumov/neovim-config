@@ -2,15 +2,15 @@ local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
 
--- Shorten function name
+-- shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
--- keymap("", "<Space>", "<Nop>", opts)
+--remap space as leader key
+keymap("", ";", "<nop>", opts)
 vim.g.mapleader = ";"
 vim.g.maplocalleader = ";"
 
--- Modes
+-- modes
 --   normal_mode = "n",
 --   insert_mode = "i",
 --   visual_mode = "v",
@@ -18,9 +18,9 @@ vim.g.maplocalleader = ";"
 --   term_mode = "t",
 --   command_mode = "c",
 
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
+-- better window navigation
+keymap("n", "<c-h>", "<c-w>h", opts)
+keymap("n", "<c-j>", "<c-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
@@ -47,12 +47,16 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- NeoTree
+-- NeoTree plugin
 keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
 keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 
 -- Hop plugin
 keymap("n", "f", ":HopChar1<CR>", opts)
+
+-- Nvim-comment plugin
+keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
+keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
 
 --Insert date
 keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
