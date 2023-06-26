@@ -40,6 +40,11 @@
 - Show references: `<leader>fr`
 - Open definition: `od`
 
+### Terminals plugin
+
+- Open lazygit: `<leader>tg`
+- Open float terminal: `<leader>t`
+
 ### Custom features
 
 - Insert date: `<leader>d`
