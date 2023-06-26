@@ -7,7 +7,7 @@
 
 ### Main remaped
 
-- Windows navigation: **<C-h>, <C-j>, <C-k>, <C-l>**
+- Windows navigation: `**<C-h>, <C-j>, <C-k>, <C-l>**`
 - Resize window: **<C-up>, <C-Down>, <C-Left>, <C-Right>**
 - Prev and next buffer: **\_, 0**
 - Move up and down line(s): **<A-j>, <A-k>**
