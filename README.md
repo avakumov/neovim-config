@@ -12,6 +12,8 @@
 - Prev and next buffer: `\_, 0`
 - Move up and down line(s): `<A-j>, <A-k>`
 - Indent: `<, >`
+- Toggle the fold under the cursor: `za`
+- Toggle the all fold: `zA`
 
 ### Neotree plugin
 
@@ -38,7 +40,7 @@
 - Git status: `<leader>gs`
 - Find functions, const, variables: `<leader>fv`
 - Show references: `<leader>fr`
-- Open definition: `od`
+- Open definition: `<leader>fd`
 
 ### Terminals plugin
 
