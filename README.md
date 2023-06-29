@@ -9,7 +9,7 @@
 
 - Windows navigation: `<C-h>, <C-j>, <C-k>, <C-l>`
 - Resize window: `<C-up>, <C-Down>, <C-Left>, <C-Right>`
-- Prev and next buffer: `\_, 0`
+- Prev and next buffer: `_, 0`
 - Move up and down line(s): `<A-j>, <A-k>`
 - Indent: `<, >`
 - Toggle the fold under the cursor: `za`
@@ -18,6 +18,7 @@
 ### Neotree plugin
 
 - Show, hide files: `<leader>e`
+
 - Show git status: `<leader>s`
 
 ### Hop plugin
@@ -47,6 +48,22 @@
 - Open lazygit: `<leader>tg`
 - Open float terminal: `<leader>t`
 
-### Custom features
+### LSP
 
-- Insert date: `<leader>d`
+- Format code: `<leader>lf`
+- Rename: `<leader>r`
+- Code action: `<leader>a`
+- Open float diagnostic on hover line: `<leader>d`
+- Next diagnostic: `<leader>dj`
+- Prev diagnostic: `<leader>dk`
+- Open diagnostic list in new buffer: `<leader>dl`
+- Declaration in new buffer: `gD`
+- Definition in new buffer: `gd`
+- Hover info: `<leader>h`
+- Implementation in new buffer: `<leader>i`
+- Signature help: `<leader>s`
+- Type definition: `<leader>dt`
+- Show references in new buffer: `<leader>lr`
+- Add to workspace folder: `<leader>wa`
+- Remove from workspace folder: `<leader>wr`
+- List workspace folder: `<leader>wl`
