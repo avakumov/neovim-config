@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -49,7 +47,6 @@ keymap("v", ">", ">gv", opts)
 
 -- NeoTree plugin
 keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
-keymap("n", "<leader>s", ":Neotree float git_status<CR>", opts)
 
 -- Hop plugin
 keymap("n", "f", ":HopChar1<CR>", opts)
@@ -59,7 +56,7 @@ keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
 keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
 
 --Insert date
-keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
+-- keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
 
 --[[ example function insert text on current cursot position --]]
 -- local test_print = function()

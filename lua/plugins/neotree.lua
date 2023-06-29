@@ -3,26 +3,31 @@ local config = {
 		winbar = true, -- toggle to show selector on winbar
 		statusline = true, -- toggle to show selector on statusline
 	},
+	filesystem = {
+		filtered_items = {
+			visible = true,
+		},
+	},
 	default_component_configs = {
 		container = {
 			enable_character_fade = true,
 			width = "100%",
 			right_padding = 0,
 		},
-		--diagnostics = {
-		--  symbols = {
-		--    hint = "H",
-		--    info = "I",
-		--    warn = "!",
-		--    error = "X",
-		--  },
-		--  highlights = {
-		--    hint = "DiagnosticSignHint",
-		--    info = "DiagnosticSignInfo",
-		--    warn = "DiagnosticSignWarn",
-		--    error = "DiagnosticSignError",
-		--  },
-		--},
+		diagnostics = {
+			symbols = {
+				hint = "H",
+				info = "[i]",
+				warn = "!",
+				error = "x",
+			},
+			highlights = {
+				hint = "DiagnosticSignHint",
+				info = "DiagnosticSignInfo",
+				warn = "DiagnosticSignWarn",
+				error = "DiagnosticSignError",
+			},
+		},
 		indent = {
 			indent_size = 2,
 			padding = 1,
