@@ -70,6 +70,17 @@ local plugins = {
 	},
 	-- colorizer plugin
 	{ "norcalli/nvim-colorizer.lua" },
+
+	--preview markdown file in browser plugin
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreview", "MarkdownPreviewStop" },
+		lazy = false,
+		build = "cd app && npm i",
+		init = function()
+			vim.g.mkdp_theme = "dark"
+		end,
+	},
 }
 
 require("lazy").setup(plugins)
