@@ -5,7 +5,7 @@
 - Leader key: `;`
 - Show number: `true`
 
-### Main remapped
+### Main keymaps
 
 - Windows navigation: `<C-h>, <C-j>, <C-k>, <C-l>`
 - Resize window: `<C-up>, <C-Down>, <C-Left>, <C-Right>`
@@ -14,12 +14,13 @@
 - Indent: `<, >`
 - Toggle the fold under the cursor: `za`
 - Toggle the all fold: `zA`
+- Delete word: `<leader>x`
+- Append line below: `<A-o>`
+- Append line above: `<A-O>`
 
 ### Neotree plugin
 
 - Show, hide files: `<leader>e`
-
-- Show git status: `<leader>s`
 
 ### Hop plugin
 

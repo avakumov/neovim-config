@@ -16,8 +16,16 @@ vim.g.maplocalleader = ";"
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- delete word
+keymap("n", "<leader>x", "dawi", opts)
+
+-- add new line without move corsor
+keymap("n", "<A-o>", ":call append(line('.'), '')<CR>", opts)
+keymap("n", "<A-O>", ":call append(line('.')-1, '')<CR>", opts)
+
 -- better window navigation
 keymap("n", "<c-h>", "<c-w>h", opts)
+
 keymap("n", "<c-j>", "<c-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
