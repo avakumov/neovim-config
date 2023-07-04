@@ -21,6 +21,8 @@
 ### Neotree plugin
 
 - Show, hide files: `<leader>e`
+- Set root dir by cursor: `_`
+- Set root dir parent: `0`
 
 ### Hop plugin
 

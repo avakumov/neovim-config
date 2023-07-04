@@ -7,6 +7,12 @@ local config = {
 		filtered_items = {
 			visible = true,
 		},
+		window = {
+			mappings = {
+				["_"] = "set_root",
+				["0"] = "navigate_up",
+			},
+		},
 	},
 	default_component_configs = {
 		container = {

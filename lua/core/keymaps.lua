@@ -25,7 +25,6 @@ keymap("n", "<A-O>", ":call append(line('.')-1, '')<CR>", opts)
 
 -- better window navigation
 keymap("n", "<c-h>", "<c-w>h", opts)
-
 keymap("n", "<c-j>", "<c-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
@@ -43,6 +42,7 @@ keymap("n", "0", ":bprevious<CR>", opts)
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>", opts)
+
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dp', opts)
