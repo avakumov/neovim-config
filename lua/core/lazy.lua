@@ -81,6 +81,9 @@ local plugins = {
 			vim.g.mkdp_theme = "dark"
 		end,
 	},
+
+	--start screen
+	{ "mhinz/vim-startify" },
 }
 
 require("lazy").setup(plugins)
