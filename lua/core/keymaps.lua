@@ -64,7 +64,7 @@ keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
 keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
 
 --Insert date
--- keymap("n", "<leader>d", ":r !date +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
+keymap("n", "<leader>id", ":r !date -d '-1 hour ago' +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
 
 --[[ example function insert text on current cursot position --]]
 -- local test_print = function()

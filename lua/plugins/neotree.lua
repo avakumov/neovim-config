@@ -9,6 +9,8 @@ local config = {
 		},
 		window = {
 			mappings = {
+				["."] = "noop",
+				["<bs>"] = "noop",
 				["_"] = "set_root",
 				["0"] = "navigate_up",
 			},
