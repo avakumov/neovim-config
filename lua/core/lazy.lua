@@ -84,6 +84,7 @@ local plugins = {
 
 	--start screen
 	{ "mhinz/vim-startify" },
+	{ "rest-nvim/rest.nvim", dependencies = "nvim-lua/plenary.nvim" },
 }
 
 require("lazy").setup(plugins)

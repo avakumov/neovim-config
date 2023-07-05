@@ -70,3 +70,9 @@
 - Add to workspace folder: `<leader>wa`
 - Remove from workspace folder: `<leader>wr`
 - List workspace folder: `<leader>wl`
+
+### Request api
+
+- Request under cursor: <leader>q
+- Request last: <leader>qq
+- Request preview cURL command: <leader>qp
