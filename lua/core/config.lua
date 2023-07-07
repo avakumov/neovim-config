@@ -15,6 +15,7 @@ vim.o.guicursor = table.concat({
 	"i-ci:ver25-Cursor/lCursor-blinkwait1000-blinkon100-blinkoff100",
 	"r:hor50-Cursor/lCursor-blinkwait100-blinkon100-blinkoff100",
 }, ",")
+
 -- Clipboard
 vim.opt.clipboard = "unnamedplus"
 
@@ -40,11 +41,12 @@ function M.nvim_create_augroups(definitions)
 	end
 end
 
+--
 local autoCommands = {
-	-- other autocommands
-	open_folds = {
-		{ "BufReadPost,FileReadPost", "*", "normal zR" },
-	},
+	-- autofolds
+	open_folds = { { "BufReadPost,FileReadPost", "*", "normal zR" } },
+	-- For conf file set manual typefile
+	set_conf_filetype = { { "BufRead,BufNewFile,StdinReadPost", "*.conf", "set ft=conf" } },
 }
 
 M.nvim_create_augroups(autoCommands)
