@@ -22,31 +22,12 @@ vim.opt.clipboard = "unnamedplus"
 -- Set  tree-sitter folding based
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
--- vim.opt.nofoldenable = true
+vim.cmd("set nofoldenable") --unfolding at startup
 
-local vim = vim
-local api = vim.api
-local M = {}
--- function to create a list of commands and convert them to autocommands
--------- This function is taken from https://github.com/norcalli/nvim_utils
-function M.nvim_create_augroups(definitions)
-	for group_name, definition in pairs(definitions) do
-		api.nvim_command("augroup " .. group_name)
-		api.nvim_command("autocmd!")
-		for _, def in ipairs(definition) do
-			local command = table.concat(vim.tbl_flatten({ "autocmd", def }), " ")
-			api.nvim_command(command)
-		end
-		api.nvim_command("augroup END")
-	end
-end
+local group = vim.api.nvim_create_augroup("CustomGroup", { clear = true })
 
---
-local autoCommands = {
-	-- autofolds
-	open_folds = { { "BufReadPost,FileReadPost", "*", "normal zR" } },
-	-- For conf file set manual typefile
-	set_conf_filetype = { { "BufRead,BufNewFile,StdinReadPost", "*.conf", "set ft=conf" } },
-}
-
-M.nvim_create_augroups(autoCommands)
+-- set conf typefile to *.conf
+vim.api.nvim_create_autocmd(
+	{ "BufRead", "BufNewFile", "StdinReadPost" },
+	{ command = "set ft=conf", pattern = "*.conf", group = group }
+)
