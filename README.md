@@ -73,6 +73,6 @@
 
 ### Request api
 
-- Request under cursor: <leader>q
-- Request last: <leader>qq
-- Request preview cURL command: <leader>qp
+- Request under cursor: `<leader>q`
+- Request last: `<leader>qq`
+- Request preview cURL command: `<leader>qp`
