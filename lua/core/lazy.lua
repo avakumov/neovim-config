@@ -64,7 +64,7 @@ local plugins = {
 		lazy = false,
 		priority = 1, -- High priority is needed if you will use `autoremap()`
 		config = function()
-			require("langmapper").setup({--[[ your config ]]
+			require("langmapper").setup({ --[[ your config ]]
 			})
 		end,
 	},
@@ -84,6 +84,8 @@ local plugins = {
 
 	--start screen
 	{ "mhinz/vim-startify" },
+
+	--request to api
 	{ "rest-nvim/rest.nvim", dependencies = "nvim-lua/plenary.nvim" },
 }
 
