@@ -22,7 +22,7 @@ vim.opt.clipboard = "unnamedplus"
 -- Set  tree-sitter folding based
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.cmd("set nofoldenable") --unfolding at startup
+vim.opt.foldenable = false --unfolding at startup
 
 local group = vim.api.nvim_create_augroup("CustomGroup", { clear = true })
 
@@ -31,3 +31,6 @@ vim.api.nvim_create_autocmd(
 	{ "BufRead", "BufNewFile", "StdinReadPost" },
 	{ command = "set ft=conf", pattern = "*.conf", group = group }
 )
+
+-- settings for plugin: im-airline/vim-airline
+vim.cmd("let g:airline#extensions#tabline#enabled = 1")
