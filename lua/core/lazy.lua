@@ -87,6 +87,9 @@ local plugins = {
 
 	--request to api
 	{ "rest-nvim/rest.nvim", dependencies = "nvim-lua/plenary.nvim" },
+
+	--translate
+	{ "niuiic/translate.nvim", dependencies = "niuiic/niuiic-core.nvim" },
 }
 
 require("lazy").setup(plugins)
