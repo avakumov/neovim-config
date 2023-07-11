@@ -1,4 +1,7 @@
 local config = {
+	window = {
+		width = 30,
+	},
 	source_selector = {
 		winbar = true, -- toggle to show selector on winbar
 		statusline = true, -- toggle to show selector on statusline

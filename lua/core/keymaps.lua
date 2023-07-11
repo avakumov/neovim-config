@@ -57,16 +57,5 @@ keymap("v", ">", ">gv", opts)
 keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
 
 -- Nvim-comment plugin
-keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
 keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
-
---Insert date
-keymap("n", "<leader>id", ":r !date -d '-1 hour ago' +'\\%d.\\%m.\\%Y \\%H:\\%M'<CR>", opts)
-
---[[ example function insert text on current cursot position --]]
--- local test_print = function()
--- 	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
--- 	vim.api.nvim_buf_set_text(0, row - 1, col, row - 1, col, { "hello" })
--- end
---
--- vim.keymap.set("n", "<leader>t", test_print, { noremap = true, silent = true })
+keymap("n", "<leader>c", ":CommentToggle<CR>", opts)

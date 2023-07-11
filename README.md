@@ -76,3 +76,7 @@
 - Request under cursor: `<leader>q`
 - Request last: `<leader>qq`
 - Request preview cURL command: `<leader>qp`
+
+### Utils commands
+
+- Insert date: `:InsertDate`
