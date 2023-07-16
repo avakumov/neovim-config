@@ -4,7 +4,7 @@ vim.o.background = "dark" -- or "dark" for light mode
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
-	bold = true,
+	bold = false,
 	italic = {
 		strings = true,
 		comments = true,
@@ -17,12 +17,12 @@ require("gruvbox").setup({
 	invert_tabline = false,
 	invert_intend_guides = false,
 	inverse = true, -- invert background for search, diffs, statuslines and errors
-	contrast = "", -- can be "hard", "soft" or empty string
+	contrast = "soft", -- can be "hard", "soft" or empty string
 	palette_overrides = {
-		dark0_hard = "#03021d",
-		dark0 = "#07120d",
+		dark0_hard = "#1d2021",
+		dark0 = "#282828",
 		dark0_soft = "#32302f",
-		dark1 = "#172903",
+		dark1 = "#3c3836",
 		dark2 = "#504945",
 		dark3 = "#665c54",
 		dark4 = "#7c6f64",

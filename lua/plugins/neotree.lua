@@ -1,6 +1,15 @@
 local config = {
 	window = {
 		width = 30,
+		popup = { -- settings that apply to float position only
+			size = {
+				height = "80%",
+				width = 40,
+			},
+			position = "50%", -- 50% means center it
+			-- you can also specify border here, if you want a different setting from
+			-- the global popup_border_style.
+		},
 	},
 	source_selector = {
 		winbar = true, -- toggle to show selector on winbar

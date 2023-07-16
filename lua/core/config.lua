@@ -34,5 +34,7 @@ vim.api.nvim_create_autocmd(
 
 -- settings for plugin: im-airline/vim-airline
 vim.cmd("let g:airline#extensions#tabline#enabled = 1")
+vim.cmd("let g:airline#extensions#tabline#formatter = 'unique_tail'")
+
 -- insert date by command
 vim.api.nvim_create_user_command("InsertDate", require("core.utils").insert_date, {})

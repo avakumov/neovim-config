@@ -87,6 +87,8 @@ local plugins = {
 
 	--request to api
 	{ "rest-nvim/rest.nvim", dependencies = "nvim-lua/plenary.nvim" },
+
+	--session autosave
 	{ "Shatur/neovim-session-manager", dependencies = "nvim-lua/plenary.nvim" },
 }
 

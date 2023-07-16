@@ -54,7 +54,7 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- NeoTree plugin
-keymap("n", "<leader>e", ":Neotree toggle<CR>", opts)
+keymap("n", "<leader>e", ":NeoTreeFloatToggle <CR>", opts)
 
 -- Nvim-comment plugin
 keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
