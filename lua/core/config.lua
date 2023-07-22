@@ -38,3 +38,8 @@ vim.cmd("let g:airline#extensions#tabline#formatter = 'unique_tail'")
 
 -- insert date by command
 vim.api.nvim_create_user_command("InsertDate", require("core.utils").insert_date, {})
+
+-- write and close others buffers
+vim.api.nvim_create_user_command("CloseOtherBuffers", function()
+	vim.cmd(":wa|%bd|e#")
+end, {})

@@ -80,3 +80,4 @@
 ### Utils commands
 
 - Insert date: `:InsertDate`
+- Save and close other buffers: `:CloseOtherBuffers`
