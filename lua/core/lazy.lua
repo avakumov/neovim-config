@@ -90,6 +90,9 @@ local plugins = {
 
 	--session autosave
 	{ "Shatur/neovim-session-manager", dependencies = "nvim-lua/plenary.nvim" },
+
+	--show git diff in buffer
+	{ "airblade/vim-gitgutter" },
 }
 
 require("lazy").setup(plugins)

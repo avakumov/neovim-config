@@ -36,8 +36,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "_", ":bnext<CR>", opts)
-keymap("n", "0", ":bprevious<CR>", opts)
+keymap("n", "_", ":bprevious<CR>", opts)
+keymap("n", "0", ":bnext<CR>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>", opts)
@@ -59,3 +59,7 @@ keymap("n", "<leader>e", ":NeoTreeFloatToggle <CR>", opts)
 -- Nvim-comment plugin
 keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
 keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
+
+-- Git gutter plugin
+keymap("n", "<leader>n", ":GitGutterNextHunk<CR>", opts)
+keymap("n", "<leader>p", ":GitGutterPrevHunk<CR>", opts)

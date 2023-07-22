@@ -77,6 +77,11 @@
 - Request last: `<leader>qq`
 - Request preview cURL command: `<leader>qp`
 
+### Git integration
+
+- Next hunk: `<leader>n`
+- Prev Hunk: `<leader>p`
+
 ### Utils commands
 
 - Insert date: `:InsertDate`

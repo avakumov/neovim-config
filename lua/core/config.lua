@@ -1,13 +1,13 @@
 vim.wo.number = true
 -- vim.wo.relativenumber = true
 
--- Indent Settings
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.smartindent = true
 vim.opt.timeoutlen = 500
+vim.opt.updatetime = 100
 
 -- Blink cursor
 vim.o.guicursor = table.concat({
