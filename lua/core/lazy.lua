@@ -97,12 +97,13 @@ local plugins = {
 	--snippets
 	{
 		"L3MON4D3/LuaSnip",
-		-- follow latest release.
+		dependencies = {}, -- follow latest release.
 		version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 		-- install jsregexp (optional!).
-		-- build = "make install_jsregexp",
+		build = "make install_jsregexp",
 	},
-	{ "saadparwaiz1/cmp_luasnip" },
+	"saadparwaiz1/cmp_luasnip",
+	"rafamadriz/friendly-snippets",
 }
 
 require("lazy").setup(plugins)

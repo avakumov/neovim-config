@@ -63,3 +63,24 @@ keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
 -- Git gutter plugin
 keymap("n", "<leader>n", ":GitGutterNextHunk<CR>", opts)
 keymap("n", "<leader>p", ":GitGutterPrevHunk<CR>", opts)
+
+--Snip jumping between parameters
+-- keymap("i", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+-- keymap("s", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+-- keymap("i", "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
+-- keymap("s", "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
+local ls = require("luasnip")
+vim.keymap.set({ "i", "s" }, "<C-j>", function()
+	ls.jump(1)
+end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-k>", function()
+	ls.jump(-1)
+end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-l>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, { silent = true })
+-- vim.keymap.set({ "i" }, "<C-K>", function()
+-- 	ls.expand()
+-- end, { silent = true })

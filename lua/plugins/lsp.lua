@@ -3,6 +3,7 @@ local lspconfig = require("lspconfig")
 lspconfig.eslint.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.prismals.setup({})
+lspconfig.html.setup({})
 lspconfig.lua_ls.setup({
 	settings = {
 		Lua = {

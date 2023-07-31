@@ -86,3 +86,9 @@
 
 - Insert date: `:InsertDate`
 - Save and close other buffers: `:CloseOtherBuffers`
+
+### Snippets
+
+- Next params: `<C-j>`
+- Prev params: `<C-k>`
+- Change choise: `<C-l>`
