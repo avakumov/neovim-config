@@ -87,6 +87,13 @@
 - Insert date: `:InsertDate`
 - Save and close other buffers: `:CloseOtherBuffers`
 
+### Registers manager
+
+- Paste in insert mode: `<C-r>`
+- Save in normal mode (show window for info): `"`
+- Command `:Registers`
+- Select the register by: `<C-j>, <C-k>`
+
 ### Snippets
 
 - Next params: `<C-j>`

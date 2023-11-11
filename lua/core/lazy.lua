@@ -81,7 +81,16 @@ local plugins = {
 			vim.g.mkdp_theme = "dark"
 		end,
 	},
-
+	--register manager
+	{
+		"tversteeg/registers.nvim",
+		name = "registers",
+		keys = {
+			{ '"', mode = { "n", "v" } },
+			{ "<C-R>", mode = "i" },
+		},
+		cmd = "Registers",
+	},
 	--start screen
 	{ "mhinz/vim-startify" },
 
