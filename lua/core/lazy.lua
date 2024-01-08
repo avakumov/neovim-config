@@ -118,6 +118,9 @@ local plugins = {
 	},
 	"saadparwaiz1/cmp_luasnip",
 	"rafamadriz/friendly-snippets",
+
+	--Indent Blankline
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 }
 
 require("lazy").setup(plugins)
