@@ -26,7 +26,11 @@ local plugins = {
 	{ "nvim-treesitter/nvim-treesitter" },
 	{ "neovim/nvim-lspconfig" },
 
+	-- themes
 	{ "ellisonleao/gruvbox.nvim", priority = 1000 },
+	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+	{ "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+	{ "savq/melange-nvim" },
 
 	{
 		"williamboman/mason.nvim",
@@ -44,7 +48,8 @@ local plugins = {
 
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.1",
+		-- tag = "0.1.4",
+		branch = "0.1.x",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 
