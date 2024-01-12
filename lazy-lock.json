@@ -17,6 +17,7 @@
   "melange-nvim": { "branch": "master", "commit": "ca3444c8e5002ee5ab6f077660317f869c7b6a36" },
   "moonfly": { "branch": "master", "commit": "fb27da9cf29c56e8031adc4df6674bac6373d7c3" },
   "neo-tree.nvim": { "branch": "v2.x", "commit": "80dc74d081823649809f78370fa5b204aa9a853a" },
+  "neovim-purple": { "branch": "main", "commit": "5efbcdd8954fcc3743d1b0ce0a13d1ade304e002" },
   "neovim-session-manager": { "branch": "master", "commit": "68dde355a4304d83b40cf073f53915604bdd8e70" },
   "nightfly": { "branch": "master", "commit": "0c6e2e88bf15634af94a91fcc2e20e28a09dfecd" },
   "nui.nvim": { "branch": "main", "commit": "c0c8e347ceac53030f5c1ece1c5a5b6a17a25b32" },

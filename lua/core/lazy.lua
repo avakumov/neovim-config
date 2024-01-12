@@ -75,7 +75,7 @@ local plugins = {
 		end,
 	},
 	-- colorizer plugin
-	{ "norcalli/nvim-colorizer.lua" },
+	{ "NvChad/nvim-colorizer.lua" },
 
 	--preview markdown file in browser plugin
 	{
