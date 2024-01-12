@@ -1,15 +1,27 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.eslint.setup({})
+lspconfig.eslint.setup({
+	filetypes = {
+		"javascript",
+		"javascriptreact",
+		"javascript.jsx",
+		"typescript",
+		"typescriptreact",
+		"typescript.tsx",
+		"vue",
+		"svelte",
+	},
+})
 lspconfig.tsserver.setup({})
 lspconfig.prismals.setup({})
 lspconfig.html.setup({})
+lspconfig.astro.setup({})
 lspconfig.lua_ls.setup({
 	settings = {
 		Lua = {
 			runtime = {
 				-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-				version = "LuaJIT",
+   				version = "LuaJIT",
 			},
 			diagnostics = {
 				-- Get the language server to recognize the `vim` global
@@ -51,14 +63,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		-- Buffer local mappings.
 		-- See `:help vim.lsp.*` for documentation on any of the below functions
 		local opts = { buffer = ev.buf }
-		vim.keymap.set("n", "<leader>lf", function()
-			vim.lsp.buf.format({
-				bufnr = 0,
-				-- filter = function(client)
-				-- 	return client.name == "null-ls"
-				-- end,
-			})
-		end, opts)
 		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
 		vim.keymap.set({ "n", "v" }, "<leader>a", vim.lsp.buf.code_action, opts)
 		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
