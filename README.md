@@ -53,7 +53,7 @@
 
 ### LSP
 
-- Format code: `<leader>lf`
+- Format code: `<leader>v`
 - Rename: `<leader>r`
 - Code action: `<leader>a`
 - Open float diagnostic on hover line: `<leader>d`
