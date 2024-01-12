@@ -30,6 +30,7 @@ null_ls.setup({
 				"javascript",
 				"typescriptreact",
 				"javascriptreact",
+				"prisma",
 			},
 		}),
 	},
@@ -42,9 +43,9 @@ null_ls.setup({
 				callback = function()
 					vim.lsp.buf.format({
 						bufnr = bufnr,
-						filter = function(client)
-							return client.name == "null-ls"
-						end,
+						-- filter = function(client)
+						-- 	return client.name == "null-ls"
+						-- end,
 					})
 					--	vim.lsp.buf.formatting_sync()
 				end,

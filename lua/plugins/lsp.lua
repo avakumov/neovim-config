@@ -54,9 +54,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "<leader>lf", function()
 			vim.lsp.buf.format({
 				bufnr = 0,
-				filter = function(client)
-					return client.name == "null-ls"
-				end,
+				-- filter = function(client)
+				-- 	return client.name == "null-ls"
+				-- end,
 			})
 		end, opts)
 		vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
