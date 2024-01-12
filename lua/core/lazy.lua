@@ -31,6 +31,7 @@ local plugins = {
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 	{ "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
 	{ "savq/melange-nvim" },
+	{ "yeddaif/neovim-purple" },
 
 	{
 		"williamboman/mason.nvim",
