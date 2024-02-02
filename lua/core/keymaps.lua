@@ -56,10 +56,6 @@ keymap("v", ">", ">gv", opts)
 -- NeoTree plugin
 keymap("n", "<leader>e", ":NeoTreeFloatToggle <CR>", opts)
 
--- Nvim-comment plugin
-keymap("v", "<leader>c", ":'<,'>CommentToggle<CR>", opts)
-keymap("n", "<leader>c", ":CommentToggle<CR>", opts)
-
 -- Git gutter plugin
 keymap("n", "<leader>n", ":GitGutterNextHunk<CR>", opts)
 keymap("n", "<leader>p", ":GitGutterPrevHunk<CR>", opts)

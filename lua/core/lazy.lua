@@ -97,7 +97,9 @@ local plugins = {
 
 	-- autopairs plugins
 	{ "windwp/nvim-autopairs" },
-	{ "terrortylor/nvim-comment" },
+
+	--comments
+	{ "numToStr/Comment.nvim" },
 
 	-- terminals
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },

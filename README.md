@@ -28,9 +28,17 @@
 
 - Go to character in current buffer(char1): `f`
 
-### Nvim-comment plugin
+### Comment plugin
 
-- Comment current line or selected text: `<leader>c`
+NORMAL mode:
+
+- `gcc` - Toggles the current line using linewise comment
+- `gbc` - Toggles the current line using blockwise comment
+
+INSERT mode
+
+- `gc` - Toggles the region using linewise comment
+- `gb` - Toggles the region using blockwise comment
 
 ### Telescope plugin
 
