@@ -160,6 +160,25 @@ local plugins = {
 
 	--Indent Blankline
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+		config = function()
+			-- Change '<C-g>' here to any keycode you like.
+			vim.keymap.set("i", "<C-u>", function()
+				return vim.fn["codeium#Accept"]()
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-i>", function()
+				return vim.fn["codeium#CycleCompletions"](1)
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-o>", function()
+				return vim.fn["codeium#CycleCompletions"](-1)
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-p>", function()
+				return vim.fn["codeium#Clear"]()
+			end, { expr = true, silent = true })
+		end,
+	},
 }
 
 require("lazy").setup(plugins)
