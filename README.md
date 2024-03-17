@@ -20,7 +20,8 @@
 
 ### Neotree plugin
 
-- Show, hide files: `<leader>e`
+- Show, hide files in center: `<leader>e`
+- Show, hide files in left: `<leader>l`
 - Set root dir by cursor: `_`
 - Set root dir parent: `0`
 

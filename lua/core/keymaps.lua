@@ -55,6 +55,7 @@ keymap("v", ">", ">gv", opts)
 
 -- NeoTree plugin
 keymap("n", "<leader>e", ":NeoTreeFloatToggle <CR>", opts)
+keymap("n", "<leader>l", ":NeoTreeFocusToggle <CR>", opts)
 
 -- Git gutter plugin
 keymap("n", "<leader>n", ":GitGutterNextHunk<CR>", opts)
